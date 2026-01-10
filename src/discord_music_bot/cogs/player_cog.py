@@ -11,10 +11,10 @@ from discord.ext import commands
 
 from typing import Any, cast
 
-from utils import process_search, autocomplete_playlist, fix_playlist_input, schedule_file_cleanup, seconds_to_ms
-from errors import YTDLError
+from ..utils import process_search, autocomplete_playlist, fix_playlist_input, schedule_file_cleanup, seconds_to_ms
+from ..errors import YTDLError
 
-from embeds_ import get_youtube_embed
+from ..embeds import get_youtube_embed
 
 logger = logging.getLogger('discord_music_bot')
 
@@ -205,6 +205,7 @@ class PlayerCog(commands.Cog):
             if guild_id not in self.QUERIES_QUEUES:
                 self.QUERIES_QUEUES[guild_id] = deque()
 
+            # ensure we reference the correct queue dict
             self.QUERIES_QUEUES[guild_id].append(song)
 
             # mark play state under lock

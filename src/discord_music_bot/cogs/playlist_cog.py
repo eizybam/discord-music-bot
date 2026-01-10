@@ -1,4 +1,3 @@
-
 import discord
 from discord import app_commands
 from discord.ext import commands
@@ -7,7 +6,7 @@ import json
 import os
 import logging
 
-from utils import manage_playlists, create_playlist, fix_playlist_input, autocomplete_playlist
+from ..utils import manage_playlists, create_playlist, fix_playlist_input, autocomplete_playlist
 
 logger = logging.getLogger('discord_music_bot')
 

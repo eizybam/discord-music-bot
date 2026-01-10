@@ -10,8 +10,8 @@ from discord.ext import commands
 
 from dotenv import load_dotenv, find_dotenv
 
-from player_cog import PlayerCog
-from playlist_cog import PlaylistCog
+from .cogs.player_cog import PlayerCog
+from .cogs.playlist_cog import PlaylistCog
 
 dotenv_path = find_dotenv()
 load_dotenv(dotenv_path)

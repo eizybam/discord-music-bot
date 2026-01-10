@@ -9,7 +9,7 @@ from typing import Optional, Tuple
 import yt_dlp
 from filelock import AsyncFileLock
 
-from errors import YTDLError, FileCleanupError
+from .errors import YTDLError, FileCleanupError
 
 # Use a project-wide logger name so main can configure handlers centrally
 logger = logging.getLogger('discord_music_bot')

@@ -82,7 +82,7 @@ cp .env.example .env
 
 ### 7. Run the Bot
 ```bash
-python main.py
+python -m src.discord_music_bot.main
 ```
 
 ## Usage
