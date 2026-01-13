@@ -21,10 +21,11 @@ A powerful and feature-rich Discord bot that brings YouTube music streaming dire
 
 ### Python Dependencies
 See `requirements.txt` for complete list:
-- `discord.py>=2.3.2` - Discord API wrapper
-- `yt-dlp>=2024.1.1` - YouTube downloader
-- `python-dotenv>=1.0.0` - Environment variable management
-- `filelock>=3.13.1` - File locking for safe concurrent access
+- `discord.py~=2.6.4` - Discord API wrapper
+- `python-dotenv~=1.2.1` - Environment variable management
+- `yt-dlp` - YouTube downloader
+- `filelock~=3.20.3` - File locking for safe concurrent access
+- `PyNaCl~=1.6.2` - Environment variable management
 
 ## Installation
 
