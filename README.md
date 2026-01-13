@@ -30,7 +30,7 @@ See `requirements.txt` for complete list:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/discord-music-bot.git
+git clone https://github.com/eizybam/discord-music-bot.git
 cd discord-music-bot
 ```
 
