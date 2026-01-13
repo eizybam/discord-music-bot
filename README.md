@@ -60,6 +60,10 @@ Ensure the `ffmpeg.exe` (Windows) or `ffmpeg` (Unix) is accessible at the path s
 
 ### 5. Configure Environment Variables
 ```bash
+Create a .env file and paste the content on the example environment file
+
+OR
+
 # Copy the example environment file
 cp .env.example .env
 
