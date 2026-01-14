@@ -157,21 +157,27 @@ Remove a song from a playlist.
 
 ```
 discord-music-bot/
-├── main.py              # Bot entry point and setup
-├── player_cog.py        # Music playback functionality
-├── playlist_cog.py      # Playlist management
-├── utils.py             # Utility functions (search, cleanup, etc.)
-├── errors.py            # Custom exception classes
-├── embeds_.py           # Discord embed templates
+├── LICENSE              # MIT License file
+├── README.md            # This file
 ├── requirements.txt     # Python dependencies
 ├── .env.example         # Environment variables template
 ├── .gitignore           # Git ignore file
+├── bin/
+│   └── ffmpeg/          # FFmpeg installation (Windows only)
 ├── data/
 │   ├── logs/            # Bot logs
 │   ├── playlists/       # Playlist JSON files
 │   └── .cache/          # Temporary audio files
-└── bin/
-    └── ffmpeg/          # FFmpeg installation (Windows only)
+└── src/
+    └── discord_music_bot/
+        ├── __init__.py
+        ├── main.py              # Bot entry point and setup
+        ├── utils.py             # Utility functions (search, cleanup, etc.)
+        ├── errors.py            # Custom exception classes
+        ├── embeds.py            # Discord embed templates
+        └── cogs/
+            ├── player_cog.py    # Music playback functionality
+            └── playlist_cog.py  # Playlist management
 ```
 
 ## Configuration
